@@ -3,7 +3,7 @@
 ## Objective
 
 For this project you will accomplish the following:
-- Build an Front End Application that you and your team designed in teams of 4-5 members
+- Build a front-end application that you and your team designed, in teams of 4 to 5 members
 - Learn how to collaborate to build a React application  
 - Show off your Front-End skills
 
@@ -21,11 +21,28 @@ Your team must complete the following:
 - Demo the front end web application and present it to the rest of the class
 - Submit a write-up that consists of a description and the purpose of your application and talks about the API that you used
 
+## Dates (Fall 2026)
+
+| Part | Due |
+|---|---|
+| Part I: proposal (`PROPOSAL.md` pushed, repo link submitted on bCourses, one per team) | Monday, October 26 at 9:00 AM PT |
+| Part II: presentations and demo, in person | Week 14, Monday, November 30 |
+| Part II and III: all code and `LEARNINGS.md` in the repository | Monday, November 30 at 9:00 AM PT |
+
+## Scope
+
+This is a front-end project, graded on the front end by the rubric at the bottom of this page. Your team may build a back end as well, but only the front end is graded. The data your application shows must come from at least one external API, and the data your users create must persist (localStorage is enough; an external database such as Firebase or Supabase is fine too).
+
+## The team repository
+
+- One person on the team creates the team's GitHub repository (Public, like every other repository in this course) and adds every other member as a collaborator. This is the one repository the whole project lives in; every member pushes to it, and `PROPOSAL.md` and `LEARNINGS.md` sit at its root.
+- **No API keys in the repository.** If your API needs a key, keep it in a `.env` file that is listed in `.gitignore`, and share the key with your team outside GitHub. Note that a Vite `VITE_` variable is bundled into the browser, so it is hidden from GitHub, not from your users; for a key that must stay secret, call the API through a small proxy. If you are unsure whether your API's key may be public, ask on bCourses before you commit anything.
+- Pick an API you can call from the browser (it sends CORS headers, or it offers a JavaScript SDK). Try one request from a plain `fetch` before you commit to the API in your proposal.
+
 ## Part I - Project Brief
 
-Interact with your assigned group and submit a project idea
+Meet as a team and agree on a project idea.
 
-One person on the team should create the group's Github repository, and the rest of the team should be added to the same repo.
 - Each team needs to come up with a web application that they would like to build and why.
 - Also decide on the external API that you would be using.
 ### Sample Project Examples
@@ -88,14 +105,14 @@ Here are three detailed examples of projects that meet the rubric criteria:
   - Team name & your members
   - One paragraph to summarize your idea
   - What External API you plan to use and why
-- Push the initial proposal in a PROPOSAL.md file to your group project page on GitHub. Submit the GitHub repo link to bCourses (1 submission per team)
-- We will take a look at initial drafts of the web application that you have chosen to build and comment on the feasibility of your project idea and return with comments
+- Push the proposal as `PROPOSAL.md` at the root of the team repository. Submit the repository URL on bCourses (1 submission per team).
+- We will read every proposal, comment on the feasibility of the idea and the API, and return comments.
 
 ## Part II - Build the project
 
 This is the part where you implement your web application using React. Happy Coding!
 
-Presentations to take place in-person
+Presentations take place in person on Monday, November 30.
 
 - Each team will have one repository where they will push their changes. Please use this new repository for all work on this project.
 - This could be the first time where you are using GitHub while collaborating with others. Beware of merge conflicts and editing the same file with someone else.
@@ -106,13 +123,14 @@ Presentations to take place in-person
 - Prepare and deliver your project and a presentation
   - Prep for a 10 minute presentation
   - Limit your slides to 5 pages max.
+  - Have a recording or screenshots of the live demo as a fallback, in case the API or the wifi is down during your slot
   - One of the slides must contain the functionality in bulleted form of your project
   - Your live demo must demonstrate the functionality mentioned in the slide deck. It is okay to say that you will add more functionality before the code is due, but what you say in the slide deck must be executed
 
 ## Part III - Write about your learnings
 
 - Apart from the 5 slide presentation, make sure that your code is well commented.
-- Write a document on what you did and name it LEARNINGS.md. This should contain the following:
+- Write a document on what you did and name it `LEARNINGS.md`, at the root of the team repository. This should contain the following:
   - Team name & your members
   - What was your original goal and how much of it were you able to achieve?
   - A description of what your project does and the functionality that it provides
